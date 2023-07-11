@@ -1,0 +1,129 @@
+@import url("https://use.typekit.net/vld3zfm.css");
+
+/* lista desordenada header*/
+header ul{
+    list-style-type: none;
+    font-family: "futura-pt-condensed", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;  
+    background-color:#83C83C;
+}
+
+#header1 {
+    display: flex;
+    
+    
+}
+
+/* logo header*/
+.logo{
+    width: 150px;
+    height: 150px;;
+}
+
+/*logo index*/
+#logoindex {
+    width: 400px;
+    height: 400px;
+}
+
+/*logo index centrado*/
+#logosection {
+    text-align: center;
+}
+
+/*fotos index*/
+#photoindex{
+    width: 350px;
+    height: 500px;
+    padding-left: 50px;
+}
+
+/*fotos index centrado*/
+#imgsection{
+    text-align: center;
+}
+
+/*texto index*/
+#introtext{
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/*texto index centrado*/
+#introtext p{
+    text-align: center;
+}
+
+/*texto body*/
+body{  
+    font-family: "futura-pt", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+/*parrafos en otras paginas*/
+.servicetext{
+    text-align: center;
+}
+
+/*imagenes en otras paginas*/
+.serviceimg{
+    width: 350px;
+    height: 500px;
+    padding-left: 50px;
+}
+
+/*formato parrafo general*/
+p{
+    text-align: justify;
+}
+
+/*textos e imagenes seccion quienes somos*/
+#personal p{
+    padding-left: 100px;
+}
+
+#personal img{
+    width: 70px;
+    height: 50px;
+}
+
+#personal h4{
+    padding-left: 100px;
+}
+
+#personal h3{
+    text-align: center;
+}
+
+#socials{
+    text-align: center;
+}
+
+#socials img{
+    width: 100px;
+}
+
+#form{
+    text-align: center;
+}
+
+#form p{
+    text-align: center;
+}
+
+
+h1{
+    text-align: center;
+}
+
+/*formato footer*/
+footer p{
+    font-size: x-small;
+    text-align: center;
+}
+
