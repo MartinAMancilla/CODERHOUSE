@@ -94,6 +94,16 @@ header ul{
 
 .link:hover {
     background-color: #a2c11c;
+    border: 0.5px solid greenyellow;
+    border-radius: 5px;
+}
+
+.link:visited{
+    color: black;
+}
+
+.link{
+    text-decoration-line: none;
 }
 /*texto body*/
 body{  
@@ -147,7 +157,8 @@ p{
     justify-content: center;
     justify-content: space-evenly;
     margin-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 70px;
+    margin-left: 230px;
 }
 
 h1{
@@ -170,12 +181,11 @@ h4{
     display: flex;
     align-items: center;
     align-content: end;
-    border: 1px solid black;
     height: fit-content;
     display: block;
     position: relative;
     top: 105px;
-    right: 281px;
+    right: 248px;
 }
 
 #socials img{
