@@ -92,17 +92,17 @@ header ul{
     text-align: center;
 }
 
-.link:hover {
+.links:hover {
     background-color: #a2c11c;
     border: 0.5px solid greenyellow;
     border-radius: 5px;
 }
 
-.link:visited{
+.links:visited{
     color: black;
 }
 
-.link{
+.links{
     text-decoration-line: none;
 }
 /*texto body*/
