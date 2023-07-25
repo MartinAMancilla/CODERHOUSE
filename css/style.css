@@ -1,4 +1,12 @@
 @import url("https://use.typekit.net/vld3zfm.css");
+@media (max-width: 300px){
+    body{
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+}
 
 *{
     margin: 0;
@@ -62,12 +70,10 @@ header ul{
     text-align: center;
 }
 
-/*fotos index*/
 #photoindex{
-    width: 350px;
-    height: 500px;
-    padding-left: 50px;
+    width: 40%;
 }
+
 
 /*fotos index centrado*/
 #imgsection{
