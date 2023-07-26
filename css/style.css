@@ -1,20 +1,21 @@
 @import url("https://use.typekit.net/vld3zfm.css");
-@media (max-width: 300px){
-    body{
-        img{
+
+@media (max-width: 400px) {
+    body {
+        img {
             width: 100%;
             height: auto;
         }
     }
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
 /* lista desordenada header*/
-header ul{
+header ul {
     list-style-type: none;
     font-family: "futura-pt-condensed", sans-serif;
     font-weight: 800;
@@ -23,13 +24,27 @@ header ul{
     text-decoration: none;
 }
 
+.grid-container img{
+        width: 100%;
+        height: auto;
+      }
+
 #indexheader {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #e0e0e0;
-    padding-top: 29px;
-    padding-bottom: 29px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.navigation{
+    display: flex;
+    margin-top: 4%;
+}
+
+.links{
+    font-size: 70%;
 }
 
 .header1 {
@@ -40,27 +55,30 @@ header ul{
     align-items: center;
 }
 
-.header1 ul{
+.header1 ul {
     padding-right: 50px;
     display: flex;
     padding-left: 70px;
 }
 
 .header1 img {
-    width: 300px;
-    height: 80px;
+    padding-left: 5%;
+    width: 15%;
+    height: 15%;
 }
 
 /* logo header*/
-.logo{
+.logo {
     width: 150px;
-    height: 150px;;
+    height: 150px;
+    ;
 }
 
 /*logo index*/
 #logoindex {
-    width: 400px;
-    height: 400px;
+    width: 50%;
+    height: 50%;
+    padding-top: 6%;
 }
 
 /*logo index centrado*/
@@ -70,31 +88,43 @@ header ul{
     text-align: center;
 }
 
-#photoindex{
+.photoindex {
     width: 40%;
+    border: 1px solid #e0e0e0 
 }
 
 
 /*fotos index centrado*/
-#imgsection{
-    text-align: center;
+#imgsection {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    padding-bottom: 6%;
 }
 
 /*texto index*/
-#introtext{
+#introtext {
     text-transform: uppercase;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding-bottom: 2%;
 }
 
+h2 {
+    padding-top: 0px;
+}
+
+.titletext{
+    padding-top: 4%;
+}
 
 /*texto index centrado*/
-#introtext p{
+#introtext p {
     margin-top: 10px;
-    margin-bottom: 10px ;
+    margin-bottom: 10px;
     text-align: center;
 }
 
@@ -104,15 +134,16 @@ header ul{
     border-radius: 5px;
 }
 
-.links:visited{
+.links:visited {
     color: black;
 }
 
-.links{
+.links {
     text-decoration-line: none;
 }
+
 /*texto body*/
-body{  
+body {
     font-family: "futura-pt", sans-serif;
     font-weight: 300;
     font-style: normal;
@@ -121,69 +152,83 @@ body{
 }
 
 /*parrafos en otras paginas*/
-.servicetext{
+.servicetext {
     text-align: center;
     padding-left: 20px;
     padding-right: 20px;
 }
 
 /*imagenes en otras paginas*/
-.serviceimg{
-    width: 350px;
-    height: 500px;
-    padding-left: 50px;
+.serviceimg {
+    width: 70%;
+    border: 1px solid black;
 }
 
 /*formato parrafo general*/
-p{
+p {
     text-align: justify;
 }
 
 /*textos e imagenes seccion quienes somos*/
-#personal p{
-    padding-left: 100px;
+#personal p {
+    padding-left: 3%;
+    padding-right: 3%;
 }
 
-#personal img{
+#personal img {
     width: 70px;
     height: 50px;
 }
 
-#personal h4{
+.personalimg{
+    display: flex;
+    align-items: center;
+    height: 200px;
+    border: 1px solid black;
+}
+
+#personal h4 {
+    padding-top: 5%;
     padding-left: 100px;
 }
 
-#personal h3{
+#personal h3 {
     text-align: center;
 }
 
-#socials{
-    text-align: center;
+#socials {
+    display:grid;
+}
+
+.container {
     display: flex;
-    justify-content: center;
-    justify-content: space-evenly;
-    margin-top: 50px;
-    margin-bottom: 70px;
-    margin-left: 230px;
-}
+    justify-content: center; /* Horizontally center the child elements */
+    align-items: center; /* Vertically center the child elements */
+    height: 40vh; /* Adjust this height based on your layout */
+  }
 
-h1{
+.box {
+    width: 150px; /* Set the width of your box */
+    height: 150px; /* Set the height of your box */
+  }
+
+h1 {
     margin-top: 20px;
 }
 
-h2{
+h2 {
     margin-top: 20px;
 }
 
-h3{
+h3 {
     margin-top: 20px;
 }
 
-h4{
+h4 {
     margin-top: 20px;
 }
 
-#socials h4{
+#socials h4 {
     display: flex;
     align-items: center;
     align-content: end;
@@ -194,29 +239,24 @@ h4{
     right: 248px;
 }
 
-#socials img{
-    display: flex;
-    width: 100px;
-}
-
-#form{
+#form {
     text-align: center;
 }
 
-#form p{
+#form p {
     text-align: center;
 }
 
 
-h1{
+h1 {
     text-align: center;
 }
 
 /*formato footer*/
-footer p{
+footer p {
     font-size: x-small;
     text-align: center;
     background-color: #e0e0e0;
     color: black;
-}
 
+}
