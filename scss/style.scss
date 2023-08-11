@@ -1,0 +1,243 @@
+@import url("https://use.typekit.net/vld3zfm.css");
+
+$color: #e0e0e0;
+$color-hf: #CECECD;
+$font: "futura-pt-condensed", sans-serif;
+
+@media (max-width: 200px) {
+    body {
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+
+@mixin sizes($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: $font;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+/* lista desordenada header*/
+header {
+    height: 7.5vh;
+    background-color: $color-hf;
+    padding-block: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 5vw;
+    width: 100%;
+    
+    nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+      }
+
+    ul {
+        display: flex;
+        align-items: center;
+        @include sizes(100%, 100%);
+        list-style-type: none;
+        font-weight: 800;
+        font-style: normal;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #222;
+    }
+    
+    .links {
+        text-decoration-line: none;
+        border: 0.5px solid transparent;
+        padding-inline: 0.5rem;
+        font-size: 1.5rem;
+    }
+
+    .links:hover {
+        background-color: #a2c11c;
+        border: 0.5px solid greenyellow;
+        border-radius: 5px;
+    }
+    
+    .links:visited {
+        color: #222;
+    }
+
+    .logo {
+        @include sizes(90px, 90px);
+        border-radius: none;
+        box-shadow: none;
+    }
+}
+
+img{
+    box-shadow: 0 0 10px 0 rgba(0,0,0.75);
+    border-radius: 32px;
+}
+
+/*logo index*/
+#logoindex {
+    @include sizes(80%,80%);
+    max-width: 800px;
+    box-shadow: none;
+    border-radius: none;
+}
+
+/*logo index centrado*/
+#logosection {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+// /*texto index*/
+#introtext {
+    text-transform: uppercase;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 2%;
+    width: 80%;
+    max-width: 1000px;
+}
+
+.photoindex {
+    width: 40%;
+    border: 1px solid #e0e0e0;
+}
+
+// /*fotos index centrado*/
+#imgsection {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    padding-bottom: 6%;
+}
+
+/* SERVICIOS */
+
+.servicetext{
+    width: 80%;
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    & > *{
+        padding-block: 10px;
+    }
+}
+
+.serviceimg {
+    width: 50%;
+    border: 1px solid black;
+}
+
+.container-serviceimg{
+    width: 90%;
+    display: flex;
+    justify-content: center; 
+    gap: 20px;
+}
+ 
+/* CONTACTANOS*/
+
+#socials {
+    img{
+        border-radius: none;
+        box-shadow: none;
+
+        width: 150px;
+        height: 150px;
+        margin-inline: 70px;
+    }
+}
+
+.social-title{
+    font-size: 3rem;
+}
+
+#form {
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 50%;
+    padding-block: 20px;
+}
+
+.form-group{
+    label{
+        display: block;
+    }
+}
+
+/*textos e imagenes seccion quienes somos*/
+
+.serviceimg{
+    width: 90%;
+    display: flex;
+    justify-content: center; 
+    gap: 20px;
+    border: none;
+    box-shadow: none;
+}
+
+#personal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+    max-width: 1000px;
+    & > *{
+        padding-block: 10px;
+    }
+}
+
+.personalimg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 70px;
+    height: 50px;
+    // border-radius: none;
+    // box-shadow: none;
+}
+
+footer {
+    @include sizes(100%, 7vh);
+    background-color: $color-hf;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    p {
+    
+    font-size: medium;
+    text-align: center;
+    color: black; 
+    }
+}
